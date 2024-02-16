@@ -8,7 +8,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 @Component
-@RepositoryEventHandler(Employee.class)
+@RepositoryEventHandler(Employee.class) // <1>
 public class SpringDataRestEventHandler {
 
 	private final ManagerRepository managerRepository;
